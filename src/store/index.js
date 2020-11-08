@@ -1,11 +1,25 @@
 import Vue from 'vue'
-import Vue from 'vuex'
+import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-    state: {},
-    mutations: {},
-    actions: {},
-    getters: {},
+    state: {
+        message: 'hello example page'
+    },
+    mutations: {
+        setMessage (state) {
+            state.message = 'hello again'
+        }
+    },
+    actions: {
+        setMessage({commit}) {
+            commit('setMessage')
+        }
+    },
+    getters: {
+        getMessage (state) {
+            return state.message
+        }
+    },
 })
