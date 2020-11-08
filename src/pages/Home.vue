@@ -3,7 +3,7 @@
     <section>
       <div class="container">
         <h1>Home page</h1>
-        <p> {{ message }} </p>
+<!--        <p> {{ message }} </p>-->
       </div>
     </section>
   </div>
