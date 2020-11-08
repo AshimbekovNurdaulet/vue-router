@@ -2,7 +2,8 @@
 <div class="wrapper-content">
     <section>
       <div class="container">
-        <h1>home page</h1>
+        <h1>Example page</h1>
+        <p>text text</p>
       </div>
     </section>
 </div>
