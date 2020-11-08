@@ -3,7 +3,7 @@
     <section>
       <div class="container">
         <h1>Home page</h1>
-        <p>text text</p>
+        <p> {{ message }} </p>
       </div>
     </section>
   </div>
@@ -11,6 +11,11 @@
 
 <script>
 export default {
-name: "Home"
+name: "Home",
+  computed: {
+    message(){
+      return this.$store.getters.getMessage
+    }
+  }
 }
 </script>
